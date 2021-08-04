@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap%22");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: url("../src//assets/background-stars.svg");
+  background-size: cover;
+  background-color: #070724;
+  margin: 0;
+  cursor: crosshair;
+  color: #fbe9fe;
+}
+
+p {
+  font-size: 1em;
+  width: auto;
+  height: auto;
+  font-weight: 200;
+  opacity: 80%;
+}
+
+.navBarMainDiv {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  border-bottom: 0.150em solid #393950;
+}
+
+.navBarTitle {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.5em;
+  height: auto;
+  font-weight: 200;
+  color: white;
+  margin: 0;
+  margin-left: 1vw;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navBarTitleBoxes {
+  font-family: "Spartan", sans-serif;
+  transition: background 0.6s, color 0.6s;
+  text-align: center;
+}
+
+.navBarPlanetsDiv {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.singlePlanetMainDiv {
+  height: 70vw;
+  width: 100%;
+}
+
+.singlePlanetDescriptionColumnDiv {
+  margin: 0;
+  margin-left: 4vw;
+  width: auto;
+  height: auto;
+}
+
+.descriptionButtonSelectorDiv {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+
+/* .planetButton {
+  padding: 1em 2em;
+} */
+
+.descriptionButton:hover {
+  background-color: #303148 !important;
+}
+
+.planetPropertiesMainDiv {
+  /* width: 103%; */
+  width: 67vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.planetOnePropertyDiv {
+  /* margin-left: 1vw; */
+  margin-right: 1vw;
+  white-space: nowrap;
+  padding: 0em 1em;
+  border: 1px solid #393950;
+  width: 10em;
+}
+
+.planetOnePropertySubtitle {
+  font-family: "Antonio", sans-serif;
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.planetOnePropertyTitle {
+  font-size: 0.7em;
+  font-family: "Spartan", sans-serif;
+  color: "#838391 !important";
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+
+.planetAndColumnDescriptionDiv {
+  margin: auto;
+  width: 65vw;
+  padding: 10vh 0vh 5vh 0vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.singlePlanetMainDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+}
+
+.planetColumnAndPlanetPropertiesDiv {
+  /* height: 50vw; */
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.singlePlanetTitleColumn {
+  font-family: "Antonio", sans-serif;
+  font-weight: 100 !important;
+  font-size: 4em;
+  margin: 0;
+  padding: 0px 0px 1vh;
+  /* transform: scale(1, 1.5); */
+}
+
+.paragraphDiv {
+  font-family: "Spartan", sans-serif;
+  font-weight: 800 !important;
+  height: 12em;
+  width: auto;
+  text-align: start;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  /* overflow: scroll; */
+}
+
+.paragraphDiv::-webkit-scrollbar {
+  display: none;
+}
+
+/* PLANET IMAGE */
+
+img {
+  max-width: 25vw;
+  /* max-height: 25vw; */
+}
+
+.planetImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0vh 4vw; */
+  margin-right: 2vw;
+  width: 30vw;
+  height: 30vw;
+}
+
+.planetImageDescriptionAndGeology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.planetImageGeology {
+  position: absolute;
+  width: 8%;
+  margin-top: 10%;
+}
+
+.radioButtonsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioButton {
+  background: none;
+  color: #fbe9fe;
+  font-size: 1em;
+  padding: 1em 2em;
+  text-align: start;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: 0.3vh solid #0f0f2b;
+}
+
+.radioButton:focus {
+  color: black;
+}
+
+radio {
+  list-style: none;
+}
+
+.sourceAndWikipediaLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sourceAndImgDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.singlePlanetTitleParagraphAndSourceDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePlanetContentMainDiv {
+  width: 20em;
+}
+
+@media only screen and (max-width: 1040px) {
+  #root {
+    width: 100vw;
+  }
+  .planetAndColumnDescriptionDiv {
+    padding-top: 8em;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .singlePlanetTitleParagraphAndSourceDiv {
+    width: 40vw;
+    margin: 0;
+  }
+  .descriptionButtonSelectorDiv {
+    width: 40vw;
+    margin: 0;
+  }
+  .singlePlanetContentMainDiv {
+    width: 45vw;
+    margin: 0;
+  }
+  .singlePlanetDescriptionColumnDiv {
+    margin-top: 6em;
+    margin-left: 0;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .planetPropertiesMainDiv {
+    width: 94vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4em;
+  }
+  .navBarTitle {
+    font-family: "Antonio", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .navBarPlanetsDiv {
+    margin-bottom: 1em;
+  }
+  .navBarMainDiv {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    border-bottom: 0.150em solid #393950;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .planetAndColumnDescriptionDiv {
+    padding-top: 3em;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .singlePlanetTitleParagraphAndSourceDiv {
+    width: 40vw;
+    margin: 0;
+  }
+  .descriptionButtonSelectorDiv {
+    white-space: nowrap;
+    width: 40vw;
+    margin: 0;
+  }
+  /* button {
+    padding: "0em 0em 0em 0em !important";
+  } */
+  .singlePlanetContentMainDiv {
+    width: 40vw;
+    margin: 0;
+  }
+  .singlePlanetDescriptionColumnDiv {
+    margin-top: 3em;
+    margin-left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .planetPropertiesMainDiv {
+    width: 94vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .navBarTitle {
+    font-family: "Antonio", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .navBarPlanetsDiv {
+    margin-bottom: 1em;
+  }
+  .navBarMainDiv {
+    margin-left: 0;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    border-bottom: 0.150em solid #393950;
+  }
+  .paragraphDiv {
+    max-height: 27vw;
+    overflow: scroll;
+  }
+  .planetColumnAndPlanetPropertiesDiv {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .planetAndColumnDescriptionDiv {
+    padding-top: 3em;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .singlePlanetTitleColumn {
+    margin-left: 0.5em;
+    font-size: 6vw; 
+  }
+  .singlePlanetTitleParagraphAndSourceDiv {
+    width: 100vw;
+    margin: 0;
+  }
+  .descriptionButtonSelectorDiv {
+    flex-direction: row;
+    white-space: wrap;
+    font-size: 2vw;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  /* button {
+    padding: "0em 0em 0em 0em !important";
+  } */
+  .singlePlanetContentMainDiv {
+    width: 100vw;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .singlePlanetDescriptionColumnDiv {
+    margin-top: 3em;
+    margin-left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: start;
+  }
+  .planetOnePropertyDiv {
+    width: 80vw;
+    margin-bottom: 1em;
+  }
+  .planetPropertiesMainDiv {
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .navBarTitle {
+    font-family: "Antonio", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .navBarPlanetsDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+  .navBarMainDiv {
+    margin-left: 0;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    border-bottom: 0.150em solid #393950;
+  }
+  .paragraphDiv {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-height: 27vw;
+    font-size: 3vw;
+    overflow: scroll;
+    width: 90vw;
+  }
+  .planetColumnAndPlanetPropertiesDiv {
+    width: 100vw;
+  }
+}
